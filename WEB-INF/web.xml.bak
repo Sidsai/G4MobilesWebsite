@@ -1,0 +1,10 @@
+<web-app>
+<servlet>
+<servlet-name>mytest1</servlet-name>
+<servlet-class>test1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>mytest1</servlet-name>
+<url-pattern>/deepti</url-pattern>
+</servlet-mapping>
+</web-app>

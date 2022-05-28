@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Page
+    </title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+
+    <style>
+
+        #home{
+            text-align: center;
+            font-family: Abril Fatface;
+            background-color: #603600;
+            font-size: x-large;
+            color: white;
+        }
+        /* contact section  */
+#contact{
+    display: block;
+    position: relative;
+    background-image: url('2018-11-26-image.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#contact h1{
+    font-family: Sofia;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+
+}
+
+#contact-box form{
+    width: 300px;
+}
+
+#contact-box label{
+    font-family: Sofia;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.btn{
+    font-family: Sofia;
+    padding: 3px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    /* width: 100%; */
+    /* margin: auto; */
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+
+.center{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <section id="home">
+
+        <div>
+            <h1>WELCOME TO OUR WEBSITE.</h1>
+            <br>
+            We always are here to help you in finding the best Phones for you.
+        </div>
+        <br>
+        
+    </section>
+    
+    <section id="contact">
+
+        <div>
+            <h1>Login now </h1>
+        </div>
+        <div id="contact-box">
+            <form action="signin" method="post">
+                
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email" placeholder="Enter your Email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Enter your password:</label>
+                    <input type="password" name="password" id="password" placeholder="****">
+                </div>
+                
+                <div class="form-group">
+                    <!-- <label for="submit">Submit now</label> -->
+                    <button class="btn"><a href="project3.html">Skip Sign in</a></button>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="submit">Submit now</label> -->
+                    <button class="btn">Reset form</button>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="submit">Submit now</label> -->
+                    <button class="btn"><a href="Entry.html">Sign Up instead</a></button>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="center">
+            copyright &copy; www.G<sup>4</sup>'sMobileWebsite.com All rights reserved.
+        </div>
+    </footer>
+    </body>
+</html>

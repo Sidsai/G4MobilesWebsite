@@ -1,0 +1,189 @@
+.whole{
+    background-image: url('2018-11-26-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+
+@media only screen and (max-width:644px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#navbar{
+    font-family: Abril Fatface;
+    position: relative;
+    /* font-family: Sofia; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar Logo and image */
+#logo{
+    margin: 14px 15px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 3px 15px;
+}
+
+/* Navigation Bar list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 3px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Heading section */
+
+#heading .h-primary{
+    display: flex;
+    flex-direction: row;    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-family: Abril Fatface;
+    font-size: 1.9rem;
+}
+
+/* Phone section  */
+
+@media only screen and (max-width:750px)and (min-width: 350px){
+    #Phones{
+        width: 300px;
+    }
+
+    #Phones img{
+        width: 260px;
+
+    }
+
+    #navbar ul li{
+        font-size: 0.9rem;
+    }
+
+    #heading .h-primary{
+        font-size: 1.4rem;
+    }
+}
+
+#Phones{
+    margin: 34px;
+    display: inline-flex;
+}
+#Phones .box{
+    border: 2px solid red;
+    width: 600px;
+    margin: 23px;
+    padding: 12px 12px;
+    border-radius: 23px;
+    background-color: rgb(219, 198, 198);
+}
+#Phones .box img{
+    height: 260px;
+    width: 400px;
+    display: block;
+    margin: auto;
+
+}
+
+/* Pinfo box  */
+/* #Pinfo{
+    margin: 34px;
+    display: flex;
+}
+#Pinfo .ctr{
+    border: 2px solid red;
+    margin: 23px;
+    padding: 12px 12px;
+    border-radius: 23px;
+    background-color: rgb(219, 198, 198);
+} */
+/* #services .box img{
+    height: 260px;
+    width: 400px;
+    display: block;
+    margin: auto;
+
+} */
+/* .btn{
+    font-family: Sofia;
+    padding: 3px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+} */
+
+/* #Phones .box .center{
+    text-align: center;
+} */
+
+/* Footer  */
+
+footer{
+    /* width: 100%; */
+    /* margin: auto; */
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+ /* .btn{
+    font-family: Sofia;
+    padding: 3px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    /* text-align: center; */
+    /* font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+} */ 
+
+/* .btn a{
+    text-decoration: none;
+    color: white;
+}  */

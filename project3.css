@@ -1,0 +1,219 @@
+/* Navigation Bar */
+
+@media only screen and (max-width:644px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#navbar{
+    font-family: Abril Fatface;
+    position: relative;
+    /* font-family: Sofia; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar Logo and image */
+#logo{
+    margin: 14px 15px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 3px 15px;
+}
+
+/* Navigation Bar list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 3px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Heading section */
+
+#heading .h-primary{
+    display: flex;
+    flex-direction: row;    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-family: Abril Fatface;
+    font-size: 1.9rem;
+}
+
+/* intro section */
+
+#intro .h-primary{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 2.9rem;
+}
+
+#intro .bo{
+    font-family: 'Anybody';
+    color: rgb(255, 255, 255);
+    display: block;
+    border: 2px solid red;
+    margin: 13px;
+    padding: 12px 32px;
+    border-radius: 23px;
+    /* background-color: rgb(228, 213, 213); */
+    background-image: url('https://www.yankodesign.com/images/design_news/2020/09/samsungs-transparent-phone-and-more-innovative-concepts-that-prove-they-are-technology-trendsetters/01-Samsung-concepts_transparent-smartphone_best-of-tech2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.1;
+}
+
+/* Home section */
+
+@media only screen and (max-width:850px){
+    #home .box img{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #heading .h-primary{
+        font-size: 1.4rem;
+    }
+
+    #navbar ul li{
+        font-size: 0.9rem;
+    }
+}
+
+#home{
+    margin-left: 50px;
+    margin-right: 140px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: Abril Fatface;
+    display: flex;
+    flex-direction: row;
+    padding: 3px 20px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .box{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    margin: 13px;
+    padding: 12px 32px;
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255);
+    /* background: url('https://www.pinoytechnoguide.com/wp-content/uploads/2021/01/top-10-smartphones-december-2020-large.jpg'); */
+}
+
+#home .box img{
+    height: 260px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+}
+
+#home::before{
+    content: "";
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* contact section  */
+#contact{
+    font-family: Abrial Fatface;
+    display: block;
+    position: relative;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+#contact h1{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    /* margin-top: 100px; */
+}
+
+#contact p{
+    font-family: sofia;
+    font-weight: bolder;
+    color: beige;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn{
+    font-family: Sofia;
+    padding: 3px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* footer  */
+
+footer{
+    /* width: 100%; */
+    /* margin: auto; */
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+
+.center{
+    text-align: center;
+}

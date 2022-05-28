@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Phones.css">
+    <link rel="im" href="project3.html">
+    
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anybody' rel='stylesheet'>
+    <style>
+        /* Navigation Bar */
+#navbar{
+    font-family: Abril Fatface;
+    position: relative;
+    /* font-family: Sofia; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar Logo and image */
+#logo{
+    margin: 14px 15px;
+}
+
+#logo img{
+    height: 56px;
+    margin: 3px 15px;
+}
+
+/* Navigation Bar list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 3px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Head section */
+.Head{
+    /* width: auto; */
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: Abril Fatface;
+}
+
+/* Phones section */
+
+@media only screen and (max-width:750px)and (min-width: 350px){
+    #Phones{
+        width: 370px;
+    }
+
+    #Phones img{
+        width: 260px;
+
+    }
+
+    #navbar ul li{
+        font-size: 0.9rem;
+    }
+
+    #heading .h-primary{
+        font-size: 1.4rem;
+    }
+}
+
+#Phones{
+    font-size: larger;
+    margin: 34px;
+    display: inline-flex;
+}
+#Phones .box{
+    border: 2px solid red;
+    width: 600px;
+    margin: 23px;
+    padding: 12px 12px;
+    border-radius: 23px;
+    background-color: rgb(219, 198, 198);
+}
+
+#Phones .center{
+    text-align: center;
+    justify-content: center;
+}
+#Phones .box img{
+    height: 260px;
+    /* width: 400px; */
+    display: block;
+    margin: auto;
+
+}
+
+/* Heading section
+
+#heading .h-primary{
+    display: flex;
+    flex-direction: row;    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-family: Abril Fatface;
+    font-size: 1.9rem;
+} */
+
+/* contact section  */
+#contact{
+    font-family: Abrial Fatface;
+    display: block;
+    position: relative;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+#contact h1{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    /* margin-top: 100px; */
+}
+
+#contact p{
+    font-family: sofia;
+    font-weight: bolder;
+    color: beige;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn{
+    font-family: Sofia;
+    padding: 3px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* footer  */
+
+footer{
+    /* width: 100%; */
+    /* margin: auto; */
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+
+.center{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.vhv.rs/file/max/37/374912_tech-logo-png.png"
+                height="100px" width="100px" alt="My Online Food">
+        </div>
+
+        <ul>
+            <li class="item"><a href="project3.html">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="Phones.html">Phones</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+            <li class="item" id="gauti"><a href="Entry.html">Sign up</a></li>
+            <!-- <li class="item"><a href="#">Email us</a></li> -->
+        </ul>
+    </nav>
+
+    <h1 class="Head"> SmartPhone Selection Criteria</h1>
+
+    <section id="Phones">
+        <div class="box">
+            <h1 class="h-secondary center"> Smartphones specification for students:</h1>
+            
+            <img src="https://media.istockphoto.com/photos/group-of-college-students-using-smart-phones-during-event-picture-id160893162?k=6&m=160893162&s=170667a&w=0&h=_SLrdYsqsuOAv98I_Z2AaLFKgLDV6NiSZKFGYeS_VKs=" height="300px" width="400px"alt="">
+            
+            <P class="center">
+                <b>
+                <ul>  
+                    <li>Good processor</li>
+                <li>Good camera</li>
+                <li>Good screen quality</li>
+                <li>decent battery performance</li>
+                <li>Stylish design</li>
+                <li>Some additional usefull features</li>
+            </ul> 
+            </b>
+            </P>  
+
+        </div>
+    </section>
+    
+        <!-- </div> -->
+        
+        <section id="Phones">
+            <div class="box">
+                <h1 class="h-secondary center"> Smartphones specification for Working professionals:</h1>
+                
+                <img src="https://www.headshots-london.co.uk/wp-content/uploads/2019/11/Corporate-Business-Photography-Action-Shots-in-London.jpg" height="300px" width="400px"alt="">
+                
+                <P class="center">
+                    <b>
+                    <ul>
+                    <li>Good performance</li>
+                    <li>Decent camera setup</li>
+                    <li>Good screen  quality</li>
+                    <li>Full day battery life</li>
+                    <li>minimilistic design</li>
+                    <li>clean Operating system experience</li>
+                </uli
+                </b>
+            </P>
+
+            
+        </div>
+        </section>
+
+
+        <section id="Phones">
+            <div class="box">
+                <h1 class="h-secondary center"> Smartphones specification for Gamers:</h1>
+
+            <img src="https://s3.amazonaws.com/sensortower-itunes/blog/2017/11/q3-2017-top-mobile-games-hero.jpg" height="300px" width="400px"alt="">
+            
+            <P class="center">
+                <b>
+                <ul>
+                    <li>Good performance</li>
+                    <li>Decent camera</li>
+                    <li>Good screent quality</li>
+                    <li>Good Battery life</li>
+                    <li>Gaming Design</li>
+                    <li>Special customisations for Gamers</li>
+                </ul>
+                </b>
+            </P>
+            
+
+            
+        </div>
+        </section>
+
+        
+        <section id="Phones">
+            <div class="box">
+            <h1 class="h-secondary center"> Smartphones specification for aged people:</h1>
+
+            <img src="https://aging.com/wp-content/uploads/2017/11/the-way-of-living-4.jpg" height="300px" width="400px"alt="">
+
+            <P class="center">
+                <b>
+                    <ul>
+                    <li>decent performance</li>
+                <li>Decent camera</li>
+                <li>Decent Screen quality</li>
+                <li>Great Battery life</li>
+                <li>Normal look</li>
+                <li>clean user interface</li></b>
+            </ul>
+            </P>
+
+         
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <p class="con">
+            <br>
+
+            Our CellPhone number : +91 9813189123 / +91 9992315224
+            <br>
+            <br>
+            Our Mail Address : gautam.juneja.36@gamil.com / gagandeep864@gmail.com / Siddharth1345@gmail.com / DivyanshiGrover75!@gmail.com
+            <br>
+        </p>
+
+        <footer>
+            <div class="center">
+                copyright &copy; www.G<sup>4</sup>'sMobileWebsite.com All rights reserved.
+            </div>
+        </footer>
+    
+    </section>
+</body>
+</html>
